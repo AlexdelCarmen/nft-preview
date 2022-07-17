@@ -1,3 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color-1: hsl(217, 54%, 11%);
+  --dark-color-2: hsl(216, 50%, 16%);
+  --dark-color-3: hsl(215, 32%, 27%);
+  --light-color-1: hsl(0, 0%, 100%);
+  --accent-color-1: hsl(215, 51%, 70%);
+  --accent-color-2: hsl(178, 100%, 50%);
+  --paragraph-text-size: 18px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--dark-color-1);
+  font-size: var(--paragraph-text-size);
+}
+
+.nft-preview-container {
+  background-color: var(--dark-color-2);
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

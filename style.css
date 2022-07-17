@@ -23,11 +23,71 @@ body {
 .nft-preview-container {
   background-color: var(--dark-color-2);
   width: 25%;
-  margin: 0 auto;
+  min-width: 400px;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
+  padding: 1.5rem 10px;
+}
+
+.nft-content-wrapper {
+  padding: 0 20px;
+}
+
+.nft-image-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nft-eye-icon {
+  position: absolute;
+  /* display: none; */
+}
+
+.nft-img {
+  width: 90%;
+}
+
+.nft-title {
+  color: var(--light-color-1);
+  font-size: 28px;
+}
+
+.nft-description {
+  color: var(--accent-color-1);
+}
+
+.timer-price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: -10px;
+}
+
+.nft-price-container {
+  display: flex;
+  align-items: center;
+}
+
+.nft-ethereum-logo {
+  padding: 0 10px;
+  height: 20px;
+}
+
+.nft-price-text {
+  color: var(--accent-color-2);
+}
+
+.nft-timer-container {
+  display: flex;
+  align-items: center;
+}
+
+.nft-timer-logo {
+  padding: 0 10px;
+  height: 20px;
 }
 
 .attribution {

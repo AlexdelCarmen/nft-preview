@@ -24,10 +24,11 @@ body {
   background-color: var(--dark-color-2);
   width: 25%;
   min-width: 400px;
-  margin: 5rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 10px;
+  border-radius: 10px;
 }
 
 .nft-content-wrapper {
@@ -35,23 +36,63 @@ body {
 }
 
 .nft-image-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.nft-eye-icon {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nft-img-filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: var(--accent-color-2);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nft-eye-icon {
-  position: absolute;
-  /* display: none; */
+.nft-image-container:hover {
+  cursor: pointer;
 }
 
-.nft-img {
-  width: 90%;
+.nft-image-container:hover .nft-eye-icon {
+  display: block;
+}
+
+.nft-image-container:hover .nft-img-filter {
+  opacity: 0.2;
 }
 
 .nft-title {
   color: var(--light-color-1);
   font-size: 28px;
+}
+
+.nft-title:hover {
+  color: var(--accent-color-2);
+  cursor: pointer;
 }
 
 .nft-description {
@@ -83,6 +124,7 @@ body {
 .nft-timer-container {
   display: flex;
   align-items: center;
+  margin-right: -35px;
 }
 
 .nft-timer-logo {
@@ -90,10 +132,53 @@ body {
   height: 20px;
 }
 
+.nft-timer-text {
+  color: var(--accent-color-1);
+}
+
+.nft-author-container {
+  display: flex;
+  width: 90%;
+
+  align-items: center;
+}
+
+.nft-author-avatar {
+  height: 35px;
+  margin-right: 15px;
+}
+
+.nft-author {
+  color: var(--accent-color-1);
+  vertical-align: middle;
+}
+
+.nft-author-container > img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.nft-author-link:hover {
+  cursor: pointer;
+  color: var(--accent-color-2);
+}
+
+hr {
+  height: 1px;
+  background-color: var(--accent-color-1);
+  border: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--light-color-1);
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.nft-author-link {
+  color: var(--light-color-1);
 }

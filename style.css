@@ -85,6 +85,18 @@ body {
   opacity: 0.2;
 }
 
+.nft-image-container:active {
+  cursor: pointer;
+}
+
+.nft-image-container:active .nft-eye-icon {
+  display: block;
+}
+
+.nft-image-container:active .nft-img-filter {
+  opacity: 0.2;
+}
+
 .nft-title {
   color: var(--light-color-1);
   font-size: 28px;
@@ -163,8 +175,13 @@ body {
   color: var(--accent-color-2);
 }
 
+.nft-author-link:active {
+  cursor: pointer;
+  color: var(--accent-color-2);
+}
+
 hr {
-  height: 1px;
+  height: 2px;
   background-color: var(--accent-color-1);
   border: none;
 }

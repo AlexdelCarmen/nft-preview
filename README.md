@@ -26,10 +26,12 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Live page](https://alexdelcarmen.github.io/qr-component-main/)
-- Live Site URL: [Source Code](https://github.com/AlexdelCarmen/qr-component-main)
+- Solution URL: [Source Code](https://github.com/AlexdelCarmen/nft-preview)
+- Live Site URL: [Live Page](https://alexdelcarmen.github.io/nft-preview/)
 
 ## My process
+
+Started off by creating the HTMl structure and apply styles for mobile first, then I applied the effects, this is where I got stuck on image overlays, but managed to fix it.  
 
 ### Built with
 
